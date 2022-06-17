@@ -1,0 +1,57 @@
+body{
+    width: 100vw;
+    height:100vh;
+    font-family:sans-serif;
+    background: #f7f6f6;
+    display:flex;
+    
+}
+
+/* User interface to sign in */
+.box{
+    border-radius: 25px;
+    width:300px;
+    padding:30px;
+    position: absolute;  
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: #fffefe;
+    text-align: center;
+}
+
+/* Title text*/
+.box h1{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+
+/* user and password input*/
+.box input[type="text"],.box input[type="password"]{
+    border-radius: 1px;
+    border-style:none;
+    border-bottom: outset  rgba(0,0,0,.1);
+    border-width: 2px;
+    border-color: rgba(0,0,0,0.3);
+    background: transparent ;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* button to login */
+.box input[type="Sign in"]{
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    background: #0088ff;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:none;
+    padding:14px 1px;
+    outline: none;
+    color: #ffffff; 
+    border-radius:24px;
+    transition:0.70px;
+    box-shadow: 0 4px 4pt -2pt grey ;
+}

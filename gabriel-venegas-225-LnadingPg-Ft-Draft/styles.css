@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arima:wght@200;400;600;700&display=swap');
+
+.root{
+    --success:#199d7a;
+    --dark:#000000;
+    --brown:#835302;
+}
+
+.navbar{
+    font-family: 'Arima', cursive;
+   
+}
+.navbar-brand{
+    font-size: 50px;
+    padding-left: 3%;
+    font-weight: 600;
+    color:var(--success);
+    
+}
+.navbar-nav{
+    font-size: 25px;
+    padding-right: 5%;
+    
+}
+.navbar-nav{
+    
+ 
+    justify-content: space-between;
+}
+.hero{
+    background-image: url(modernHomePlants.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+  
+    position: relative;
+    z-index: 2;
+    font-family:'Arima', cursive;
+    font-weight: 400;
+    align-items:center;
+}
+
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(163, 158, 129, 0.454);
+    z-index: -1;
+
+}
+.display-4{ 
+    font-weight: 400;
+    
+}
+.container {
+    margin-bottom: 25rem;
+}

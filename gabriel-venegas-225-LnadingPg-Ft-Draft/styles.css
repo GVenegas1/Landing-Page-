@@ -1,20 +1,25 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arima:wght@200;400;600;700&display=swap');
 
-.root{
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arima:wght@200;400;600;700&family=Playfair+Display:wght@400;600;800;900&display=swap');
+</style>.root{
     --success:#199d7a;
     --dark:#000000;
     --brown:#835302;
+    --box-shadow:grey;
 }
 
 .navbar{
     font-family: 'Arima', cursive;
+    
    
+}
+.navbar li a {
+    margin-inline-end: 2rem;
 }
 .navbar-brand{
     font-size: 50px;
     padding-left: 3%;
-    font-weight: 600;
+    font-weight: 600 ;
     color:var(--success);
     
 }
@@ -23,11 +28,9 @@
     padding-right: 5%;
     
 }
-.navbar-nav{
-    
- 
-    justify-content: space-between;
-}
+
+
+
 .hero{
     background-image: url(modernHomePlants.jpg);
     background-position: center;
@@ -54,9 +57,107 @@
 
 }
 .display-4{ 
-    font-weight: 400;
+    font-weight: 600;
     
 }
-.container {
+.welcomeall{
     margin-bottom: 25rem;
+}
+
+.btn{
+    margin-inline-end: 1rem;
+}
+h5{
+    font-weight: 700;
+    font-family:'Arima', cursive;
+}
+h6{
+    text-shadow: 2px 2px rgb(193, 249, 222);
+    font-family:'Arima', cursive;
+    font-weight: 900;
+}
+h1{
+    font-weight: 700;
+    font-family:'Arima', cursive;
+
+}
+.section{
+    padding-top: 1%;
+    padding-bottom: 15%;
+    font-size: large;
+    font-family: 'Arima', cursive;
+ 
+}
+
+.services{
+    font-weight: 900;
+    color: var(--success);
+    
+}
+.service{    
+    overflow:hidden;
+    z-index:2;
+    position: relative;
+}
+.service::after{
+    content:"";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    
+    z-index:-1;
+    opacity: 2;
+    transition: all 0.40s ease;
+
+}
+.service:hover .iconbox{
+    background-color: rgb(246, 251, 249);
+    color: rgb(10, 134, 80);
+
+}
+
+
+
+.service:hover h5, .service:hover p{
+    color:rgba(1, 1, 1, 0.723);
+}
+.service:hover::after{
+    opacity: 0;
+    top:0;
+}
+.card-effect{
+    box-shadow:var(--box-shadow);
+    background-color: rgb(237, 237, 237);
+    padding: 25px;
+    transition: all .35s ease;
+}
+.card-effect:hover{
+    box-shadow:none;
+    transform: translateY(5px);
+}
+
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 167, 107);
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    border-radius: 100px;
+    margin-left:auto;
+    margin-right: auto;
+    flex:none;
+}
+
+.col-img{
+    background-image: url(garden-community.jpg);
+    background-position:center;
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 5rem;
+ 
 }

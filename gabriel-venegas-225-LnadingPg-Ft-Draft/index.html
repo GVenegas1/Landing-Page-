@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>First Landing Page</title>
 
@@ -16,51 +20,153 @@
 
 <body>
 
-<!--NAVBAR -->
+    <!--NAVBAR -->
 
-    <nav class="navbar py-3 navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-success" href="#"><u style="text-decoration-color:rgba(152, 99, 1, 0.845)" class="log">little root</u></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar py-3 navbar-expand-lg fixed-top navbar-light">
+
+        <a class="navbar-brand text-success" href="#">little root</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><span class="sr-only">home</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">commnity</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
-            </li>
-        
-          </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home"><span class="sr-only">home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#community">commnity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+
+            </ul>
         </div>
-      </nav>
+    </nav>
 
-<!--NAVBAR-->
+    <!--NAVBAR-->
 
-<!--HERO-->
-<div class="hero vh-100 d-flex align-item">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7 mx-auto text-center">
-                <h1 class="display-4 text-light">Welcome</h1>
-                <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officia.</p>
-                <a href="#" class="btn btn-success text-light"> Get Started</a>
-                <a href="#" class="btn btn-outline-success text-light"> Gallary</a>
+    <!--WELCOME-->
+    <div class="hero vh-100 d-flex align-item" id="home">
+        <div class="container welcomeall">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h1 class="display-4 text-light">Welcome</h1>
+                    <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officia.</p>
+                    <a href="#" class="btn btn-success text-light"> Get Started</a>
+                    <a href="#" class="btn btn-outline-success text-light"> Gallary</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    
+    <!--WELCOME-->
+
+    <!--SERVICES-->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center mt-5 mb-5">
+                    <h6 class="services text-success text-uppercase p-3">Services</h6>
+                    <h1 class="h1-services">Our Garden</h1>
+                    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium nobis
+                        deleniti
+                        voluptatibus deserunt culpa porro quae id, nesciunt earum!</p>
+                </div>
+            </div>
+
+            <!--CARD ONE-->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service card-effect shadow-lg bg-white rounded">
+                        <div class="iconbox">
+                            <i class="bi bi-flower3"></i>
+                        </div>
+                        <h5 class="mt-4 mb-2 text-center font-weight-bold">Plants</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolor, nesciunt neque
+                            repudiandae ex qui veniam rem! Vel repudiandae, a ex sit sunt aut tenetur eq d ewfwecfewc?
+                        </p>
+                    </div>
+                    <!--CARD TWO-->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service card-effect shadow-lg bg-white rounded">
+                        <div class="iconbox">
+                            <i class="bi bi-recycle"></i>
+                        </div>
+                        <h5 class="mt-4 mb-2 text-center">Mulch</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, eum enim distinctio qui
+                            voluptatum aliquid necessitatibus provident, facere veniam expedita natus id iste cumque
+                            minus!</p>
+                    </div>
+                </div>
+                <!--CARD THREE-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service card-effect shadow-lg bg-white rounded">
+                        <div class="iconbox">
+                            <i class="bi bi-hexagon"></i>
+                        </div>
+                        <h5 class="mt-4 mb-2 text-center">Pots</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolorum ipsa repellendus
+                            officiis cupiditate tempora autem molestias odit quidem provident aliquam quisquam omnis
+                            veniam deleniti!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVICES-->
+
+    <!--Community-->
+    <section class="row w-100 mb-5 bg-light mt-5" id="community">
+        <div class="col-lg-6 col-img"></div>
+        <div class="col-lg-6">
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h6 class="text-success text-uppercase text-start mt-5">Community</h6>
+                        <h1>Our Neighbors</h1>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt amet vitae atque impedit molestias. Officia, deleniti est, quos veniam dolores corrupti accusamus dolorem animi deserunt reprehenderit tempore tenetur ducimus, neque ipsam debitis nam incidunt!</p>
+
+
+                        <div class="feature d-flex mt-5">
+                            <div class="iconbox me-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="">Family & Friends</h5>
+                                <p class="text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae dignissimos deserunt, dolores asperiores earum.</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex mt-5">
+                            <div class="iconbox me-3">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <div>
+                                <h5 class="">Farmers Market </h5>
+                                <p class="text-break">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quos, accusamus molestiae magni inventore placeat?</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex mt-5">
+                            <div class="iconbox me-3">
+                                <i class="bi bi-recycle"></i>
+                            </div>
+                            <div>
+                                <h5 class="">Donations </h5>
+                                <p class="text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem repudiandae earum sequi consequuntur corrupti!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Arima:wght@200;400;600;700&family=Playfair+Display:wght@400;600;800;900&display=swap');
-</style>.root{
+.root{
     --success:#199d7a;
     --dark:#000000;
     --brown:#835302;
@@ -82,8 +82,8 @@ h1{
 
 }
 .section{
-    padding-top: 1%;
-    padding-bottom: 15%;
+    padding-top: 4%;
+    padding-bottom: 12%;
     font-size: large;
     font-family: 'Arima', cursive;
  
@@ -159,5 +159,79 @@ h1{
     background-size: cover;
     min-height: 500px;
     margin-top: 5rem;
+   
  
 }
+.community{
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+.col-img2{
+    background-image: url(staff-4.jpg);
+    background-position:center;
+    background-size:cover;
+    min-height: 500px;
+    margin-top: 3rem;
+    
+}
+.team{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.contact{
+    padding-bottom: 15%;
+    font-family:'Arima', cursive;
+}
+
+form input.form-control{
+    height: 55px;
+}
+form .form-control{
+    border: transparent;
+    border-radius: 0;
+    background-color: rgb(0,0,0,0.02);
+}
+.footer-top{
+    font-family:'Arima', cursive;
+    font-weight: 500;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    
+    
+    background-color: rgba(209, 209, 209, 0.071);
+}
+.footer-top a{
+    color:rgb(113, 113, 113)
+
+}
+.footer-top a:hover{
+    color: rgb(174, 193, 188)
+
+}
+
+.footer-bottom{
+    background-color: rgba(219, 219, 219, 0.477);
+    font-family:'Arima', cursive;
+}
+
+.bi-youtube{
+    padding-right: 3%;
+    
+}
+.bi-instagram{
+    padding-right: 3%;
+    
+}
+.bi-twitter{
+    padding-right: 3%;
+    
+}
+.bi-tiktok{
+    padding-right: 3%;
+    
+}
+
+
+
+

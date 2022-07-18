@@ -138,6 +138,7 @@ h1{
     transform: translateY(5px);
 }
 
+
 .iconbox{
     width: 54px;
     height: 54px;
@@ -206,12 +207,12 @@ form .form-control{
 
 }
 .footer-top a:hover{
-    color: rgb(174, 193, 188)
+    color: rgba(151, 151, 151, 0.824)
 
 }
 
 .footer-bottom{
-    background-color: rgba(219, 219, 219, 0.477);
+    background-color: rgba(215, 215, 215, 0.39);
     font-family:'Arima', cursive;
 }
 
@@ -231,7 +232,44 @@ form .form-control{
     padding-right: 3%;
     
 }
+img{
+    width: 100%;
+}
 
+.gallary{
+    position:relative;
+    overflow: hidden;
+}
+.gallary .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(163, 158, 129, 0.454);
+    padding:30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;    
+}
+.gallary img{
+    transition: all 0.4s ease;
+}
+.gallary:hover .overlay {
+opacity: 1;
+}
+.gallary:hover img{
 
-
-
+    transform: scale(1.1);
+}
+.gallary-text{
+    color: rgba(136, 136, 136, 0.926);
+    font-family: 'Arima', cursive;
+}
+p{
+    font-family: 'Arima', cursive;
+}
+.instagram-icon{
+    padding-right: 10px;
+}
